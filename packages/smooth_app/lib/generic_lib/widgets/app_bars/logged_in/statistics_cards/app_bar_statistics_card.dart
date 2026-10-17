@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
@@ -121,7 +122,7 @@ class _AppBarStatisticsCardState extends State<AppBarStatisticsCard> {
         await widget.lazyCounter.setLocalCount(
           value,
           userPreferences,
-          notify: false,
+          notify: true,
         );
       }
     } catch (e) {
